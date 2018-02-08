@@ -71,41 +71,55 @@ if ( question5 === 'yes' || question5 === 'y') {
 
 console.log('User has entered ' + question5 + ' for question 5');
 
-
-var question6 = prompt('Bonus question!, i am thinking of a number between 40-50, what is it? by the way i am giving you 4 tries.').toLowerCase().trim();
 var numberOfTries = 0;
-while(numberOfTries < 5) {
+var answer = false;
+
+while(numberOfTries < 5 && answer === false) {
+
+  var question6 = prompt('Bonus question!, i am thinking of a number between 40-50, what is it? by the way i am giving you 4 tries.').toLowerCase().trim();
+
   if (question6 === '44') {
     alert('That is correct! Nice job, ' + username);
     answersRight++;
+    answer = true;
     break;
   }
-  if (question6 !== '44') {
-    alert('That is not correct, please try again!');
+  if (question6 < '44') {
+    alert('That is not correct your number was too low, please try again!');
     numberOfTries++;
+    answer = false;
+  }
+  if (question6 > '44') {
+    alert('That is not correct, you number was too high!');
+    numberOfTries++;
+    answer = false;
   }
 }
+
 
 console.log ('User has entered ' + question6 + ' for there answer.');
 
 var tries = 0;
 var statesTraveled = ['california', 'texas', 'maine', 'idaho', 'washington'];
-var answer = false;
+var stateanswer = false;
 
-while (tries < 7 && answer === false) {
+while (tries < 7 && stateanswer === false) {
   var question7 = prompt('Last bonus question, can you name one of the states i have been too?').toLowerCase().trim();
+
   for ( var i = 0; i < statesTraveled.length; i++ ) {
+
     if ( question7 === statesTraveled[i]) {
-      answer = true;
+      stateanswer = true;
       answersRight++;
       alert('That is correct! i have been to many different states.');
       break;
     }
   }
 
-  if (answer === false) {
+  if (question7 !== statesTraveled[i]) {
     alert('Opps! that is not correct, please try again.');
     tries++;
+    stateanswer = false;
   }
 }
 
