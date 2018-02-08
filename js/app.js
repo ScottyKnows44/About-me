@@ -109,7 +109,7 @@ function callFunction(){
       if ( question7 === statesTraveled[i]) {
         stateanswer = true;
         answersRight++;
-        alert('That is correct! i have been to statesTraveled[i].');
+        alert('That is correct! i have been to ' + statesTraveled[0] + ' ' + statesTraveled[1] + ' '+ statesTraveled[2] + ' ' + statesTraveled[3] + ' ' + statesTraveled[4] + '.');
         break;
       }
     }
