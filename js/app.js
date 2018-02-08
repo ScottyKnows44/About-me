@@ -1,6 +1,6 @@
 'use strict';
 
-
+function callFunction(){
 var answersRight = 0;
 
 var username = prompt ('Hi! Glad you are here, what is your name?');
@@ -21,7 +21,6 @@ if (question1 === 'yes' || question1 === 'y') {
 console.log('User has entered ' + question1 + ' for question 1.');
 
 var question2 = prompt ('Next question! Do you think i have a brother?').toLowerCase().trim();
-
 if (question2 === 'yes' || question2 === 'y') {
   alert('That is right ' + username + '! I have two brothers, Eric and David');
   answersRight++;
@@ -34,7 +33,6 @@ if (question2 === 'yes' || question2 === 'y') {
 console.log('User has entered ' + question2 + ' for the 2nd question');
 
 var question3 = prompt('Question 3, I play the bass guitar?').toLowerCase().trim();
-
 if (question3 === 'yes' || question3 === 'y') {
   alert('Nope! I have never played bass befpre.');
 } else if (question3 === 'no' || question3 === 'n') {
@@ -76,7 +74,7 @@ var answer = false;
 
 while(numberOfTries < 5 && answer === false) {
 
-  var question6 = prompt('Bonus question!, i am thinking of a number between 40-50, what is it? by the way i am giving you 4 tries.').toLowerCase().trim();
+  var question6 = prompt('Bonus question!, I am thinking of a number between 40-50, what is it? by the way I am giving you 4 tries.').toLowerCase().trim();
 
   if (question6 === '44') {
     alert('That is correct! Nice job, ' + username);
@@ -129,4 +127,5 @@ var finalStatement = alert('Well done ' + username + ' you got ' + answersRight 
 
 finalStatement;
 
-
+}
+callFunction();
