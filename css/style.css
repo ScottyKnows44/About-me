@@ -1,22 +1,20 @@
-* {
-    color:rgb(0, 0, 0);
-}
-
 h1 {
     text-align:center;
+    color: aliceblue;
 
 }
 
 header {
     text-align: center;
     font-size: 50px;
+    color: whitesmoke;
 }
 
 li {
     text-align: center;
+    color: white;
     font-style: italic;
-    font-size: 15;
-
+    font-size: 20px;
 }
 
 ul {
@@ -25,6 +23,19 @@ ul {
 }
 
 
-body  {
-    background-color: aquamarine;
+body {
+    background-image: url("../img/cool.jpg");
 }
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 400px;
+    height: 400px;
+    transform: rotate(270deg);
+    border-style: solid;
+    border-width: 15px;
+    border-color: brown;
+}
+
