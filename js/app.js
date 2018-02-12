@@ -151,7 +151,7 @@ function callFunction7() {
 }
 
 function totalRight() {
-var finalStatement = alert('Well done ' + username + ' you got ' + answersRight + ' out of 7!');
+  var finalStatement = alert('Well done ' + username + ' you got ' + answersRight + ' out of 7!');
 }
 
 callFunction1();
